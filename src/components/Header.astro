@@ -1,6 +1,6 @@
 ---
 import HeaderLink from './HeaderLink.astro'
-import { HOME_PAGE } from '../config'
+import { HOMEPAGE_URL } from '../config'
 import { IoLogoGithub } from 'react-icons/io5/index.js'
 import LogoIcon from './icons/logo'
 import ThemeToggle from './ThemeToggleButton'
@@ -18,7 +18,7 @@ import ThemeToggle from './ThemeToggleButton'
         </h2>
       </a>
       <div class="items-center gap-6 hidden md:flex">
-        <HeaderLink href={HOME_PAGE}>About</HeaderLink>
+        <HeaderLink href={HOMEPAGE_URL}>About</HeaderLink>
         <HeaderLink
           href="https://github.com/lucasgustavodiaz/luks-uses"
           target="_blank"

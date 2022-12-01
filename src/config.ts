@@ -3,4 +3,4 @@
 
 export const SITE_TITLE = 'What I Use - Lucas Diaz'
 export const SITE_DESCRIPTION = 'A curated list of the tech I use'
-export const HOME_PAGE = 'https://lucasdiaz.netlify.app/'
+export const HOMEPAGE_URL = 'https://lucasdiaz.netlify.app/'
