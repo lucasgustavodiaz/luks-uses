@@ -8,7 +8,7 @@ import Content from '../components/Content.astro'
 import { IoArrowForward } from 'react-icons/io5'
 import Masthead from '../components/Masthead.astro'
 import { Image } from '@astrojs/image/components'
-// import CreatedWithSection from '../components/CreatedWithSection.astro'
+import CreatedWithSection from '../components/CreatedWithSection.astro'
 
 const posts = (await Astro.glob('./posts/*.md')).sort(
   (a: any, b: any) =>
@@ -51,7 +51,7 @@ const posts = (await Astro.glob('./posts/*.md')).sort(
                   <a href={post.url}>
                     <Image
                       class="border border-slate-300 dark:border-zinc-700 rounded-xl"
-                      src="/placeholder-hero.jpg"
+                      src={post.frontmatter.heroImage}
                       width={720 * 2}
                       aspectRatio={2.0}
                       alt="Thumbnail"
@@ -70,6 +70,7 @@ const posts = (await Astro.glob('./posts/*.md')).sort(
             }
           </ul>
         </section>
+        <CreatedWithSection />
       </Content>
     </main>
     <Footer />
