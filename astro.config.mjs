@@ -7,7 +7,8 @@ import addClasses from 'rehype-add-classes'
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://uses.craftz.dog/',
+  site: 'https://astronaut.github.io',
+  base: '/luks-uses',
   integrations: [
     sitemap(),
     react(),
